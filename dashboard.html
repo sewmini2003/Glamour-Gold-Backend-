@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f4f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .dashboard {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .dashboard-button {
+            display: block;
+            text-align: center;
+            width: 200px;
+            height: 100px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            margin: 10px;
+            line-height: 100px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .dashboard-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align = center>Dashboard</h1>
+    <div class="container">
+        <div class="dashboard">
+            <a href="addProduct.html" class="dashboard-button">Insert Products</a>
+            <a href="SearchProducts.php" class="dashboard-button">Search Products</a>
+            <a href="orders.php" class="dashboard-button">See Order</a>
+            <a href="display_contact.php" class="dashboard-button">see reviews</a>
+        </div>
+    </div>
+</body>
+
+</html>

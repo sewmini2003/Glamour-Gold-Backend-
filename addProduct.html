@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add products</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #dddddd;
+            border-radius: 3px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="file"] {
+            margin-bottom: 10px;
+        }
+
+        small {
+            display: block;
+            margin-bottom: 15px;
+            font-size: 12px;
+            color: #777777;
+        }
+
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }   
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add products</h1>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+
+        <label for="name">Name:</label>
+        <input type="text" name="namePro" id="">
+
+        <label for="name">Price:</label>
+        <input type="text" name="price" id="">
+
+        <label for="name">Description:</label>
+        <textarea name="description" id="" cols="30" rows="10"></textarea>
+        
+        <input type="file" name="my_image" required>
+
+        <input type="submit" name="submit" value="Upload">
+    </form>
+</body>
+</html>
